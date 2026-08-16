@@ -1,0 +1,14 @@
+graph TD
+    A[Raw CSV/Excel Data] --> B[Data Ingestion: analyzer.py]
+    B -->|Pandas Aggregation| C(Deterministic Evidence Facts)
+    
+    C -->|Total Cases, Ages, etc.| D[Context Assembly: prompts.py]
+    
+    D -->|Scoped Prompts| E[AI Generation: generator.py]
+    E -->|Gemini API Request| F((Gemini 2.5 LLM))
+    F -->|Generated Narrative Text| E
+    
+    E --> G[Report Compiler: main.py]
+    C -->|Deterministic Headers| G
+    
+    G --> H[Final PADER_Report.md]
