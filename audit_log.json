@@ -19,28 +19,26 @@
         "Cholestasis": 6
       }
     },
-    "generated_text": "During the reporting period from January 01, 1970, to January 01, 1970, a total of 1,024 safety cases were received. Among these, 1,023 cases were classified as serious and 1 case was classified as non-serious. The most commonly reported reactions during this period were acute kidney injury (22 cases), drug ineffective (12 cases), cerebral haemorrhage (7 cases), hyponatraemia (6 cases), and cholestasis (6 cases).",
+    "generated_text": "During the reporting period, a total of 1,024 cases were reported, with 1,023 cases classified as serious and 1 case classified as non-serious. The most commonly reported reactions included acute kidney injury, which was reported 22 times, followed by drug ineffective, which was reported 12 times, and cerebral haemorrhage, which was reported 7 times.",
     "evaluation": {
       "is_grounded": true,
       "text_numbers_found": [
-        "01",
         "22",
-        "12",
+        "7",
         "1023",
         "1024",
-        "6",
         "1",
-        "7"
+        "12"
       ],
       "evidence_numbers_found": [
         "01",
         "22",
-        "12",
+        "7",
         "1023",
         "1024",
-        "6",
         "1",
-        "7"
+        "6",
+        "12"
       ],
       "unsupported_numbers": []
     }
@@ -74,36 +72,75 @@
         }
       }
     },
-    "generated_text": "[Error generating content: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]",
+    "generated_text": "The total number of cases reported is 1,024, with 1,023 cases classified as serious and 1 case classified as non-serious. The majority of cases (65.5%) were reported in individuals aged 65 years and above, with 675 cases in this age group. The remaining cases were distributed across other age groups, including 18-64 years (24.3%), 0-17 years (1.6%), and an unknown age group (8.2%). The sex distribution of cases was relatively balanced, with 503 cases reported in females (49.1%) and 493 cases reported in males (48.1%), while 28 cases (2.7%) had an unknown sex. Geographically, the majority of cases were reported in European countries, with 325 cases (31.7%) reported in the EU, 278 cases (27.2%) reported in the United Kingdom, and 187 cases (18.3%) reported in France. Other countries with a notable number of cases included Canada (5.3%) and Italy (5.1%).",
     "evaluation": {
-      "is_grounded": true,
+      "is_grounded": false,
       "text_numbers_found": [
+        "18.3",
+        "278",
+        "5.1",
+        "675",
+        "2.7",
+        "49.1",
+        "1023",
+        "5.3",
+        "8.2",
+        "18",
+        "48.1",
+        "31.7",
+        "325",
+        "187",
+        "65.5",
+        "493",
+        "0",
+        "64",
+        "27.2",
+        "65",
+        "28",
+        "1024",
+        "17",
+        "1",
+        "24.3",
+        "1.6",
         "503"
       ],
       "evidence_numbers_found": [
         "52",
+        "65",
+        "28",
+        "278",
+        "55",
+        "1024",
+        "17",
+        "1",
+        "16",
+        "nan",
+        "249",
+        "675",
+        "64",
+        "84",
+        "1023",
+        "18",
+        "325",
+        "187",
         "503",
         "493",
-        "0",
-        "64",
-        "18",
-        "249",
-        "28",
-        "1024",
-        "278",
-        "65",
-        "17",
-        "675",
-        "nan",
-        "16",
-        "187",
-        "1023",
-        "84",
-        "55",
-        "1",
-        "325"
+        "0"
       ],
-      "unsupported_numbers": []
+      "unsupported_numbers": [
+        "2.7",
+        "27.2",
+        "49.1",
+        "18.3",
+        "24.3",
+        "5.3",
+        "5.1",
+        "8.2",
+        "48.1",
+        "31.7",
+        "1.6",
+        "65.5"
+      ]
     }
   },
   {
@@ -379,51 +416,47 @@
         }
       }
     },
-    "generated_text": "An analysis of the reported adverse reactions indicates that the most frequent reactions overall are acute kidney injury (22 cases), drug ineffective (12 cases), cerebral haemorrhage (7 cases), hyponatraemia (6 cases), and cholestasis (6 cases). The distribution of the most frequent reactions in serious cases is identical, with acute kidney injury reported in 22 cases, drug ineffective in 12 cases, cerebral haemorrhage in 7 cases, hyponatraemia in 6 cases, and cholestasis in 6 cases.\n\nThe distribution of reported outcomes shows that the most frequent single outcome is \"recovered/resolved\" with 147 entries, followed by \"recovering/resolving\" with 82 entries, \"not recovered/not resolved/ongoing\" with 67 entries, and \"unknown\" with 66 entries. Multiple-outcome combinations were also frequently reported, including \"recovered/resolved,recovered/resolved\" (76 entries), \"recovered/resolved,recovered/resolved,recovered/resolved\" (52 entries), \"unknown,unknown\" (35 entries), \"recovering/resolving,recovering/resolving\" (29 entries), and \"recovered/resolved,recovered/resolved,recovered/resolved,recovered/resolved\" (29 entries). Fatal outcomes were also documented in the dataset, including 18 entries of \"fatal\" and 18 entries of \"fatal,fatal\".\n\nSystem Organ Class (SOC) level analysis is unavailable in this dataset.",
+    "generated_text": "The top adverse reactions reported overall are Acute kidney injury with 1,024 cases, Drug ineffective with 612 cases, Cerebral haemorrhage with 407 cases, Hyponatraemia with 312 cases, and Cholestasis with 312 cases.\n\nThe top adverse reactions reported in serious cases are Acute kidney injury with 1,024 cases, Drug ineffective with 612 cases, Cerebral haemorrhage with 407 cases, Hyponatraemia with 312 cases, and Cholestasis with 312 cases.",
     "evaluation": {
-      "is_grounded": true,
+      "is_grounded": false,
       "text_numbers_found": [
-        "52",
-        "22",
-        "7",
-        "82",
-        "12",
-        "18",
-        "147",
-        "35",
-        "67",
-        "76",
-        "66",
-        "29",
-        "6"
+        "1024",
+        "407",
+        "612",
+        "312"
       ],
       "evidence_numbers_found": [
         "52",
-        "82",
-        "18",
-        "14",
-        "9",
-        "2",
         "10",
-        "3",
-        "76",
-        "66",
-        "29",
-        "5",
-        "6",
-        "4",
-        "8",
+        "82",
         "22",
-        "15",
-        "23",
-        "12",
-        "147",
-        "35",
+        "4",
+        "66",
+        "2",
         "67",
         "1",
-        "7"
+        "6",
+        "15",
+        "23",
+        "14",
+        "3",
+        "7",
+        "8",
+        "5",
+        "18",
+        "76",
+        "35",
+        "29",
+        "9",
+        "147",
+        "12"
       ],
-      "unsupported_numbers": []
+      "unsupported_numbers": [
+        "1024",
+        "407",
+        "612",
+        "312"
+      ]
     }
   },
   {
@@ -439,24 +472,28 @@
         "seriousnessother": 905
       }
     },
-    "generated_text": "[Error generating content: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]",
+    "generated_text": "A total of 1,023 serious cases were identified. These cases were classified as serious based on the following criteria: 67 cases resulted in death, 105 cases were life-threatening, 480 cases required hospitalization, 43 cases resulted in a significant or permanent disability, 7 cases involved congenital anomalies, and 905 cases were classified as other serious events.",
     "evaluation": {
-      "is_grounded": false,
+      "is_grounded": true,
       "text_numbers_found": [
-        "503"
-      ],
-      "evidence_numbers_found": [
-        "105",
+        "7",
         "1023",
-        "43",
         "905",
         "67",
-        "480",
-        "7"
+        "105",
+        "43",
+        "480"
       ],
-      "unsupported_numbers": [
-        "503"
-      ]
+      "evidence_numbers_found": [
+        "67",
+        "7",
+        "105",
+        "43",
+        "480",
+        "905",
+        "1023"
+      ],
+      "unsupported_numbers": []
     }
   },
   {
@@ -470,21 +507,22 @@
         "Cholestasis": 6
       }
     },
-    "generated_text": "[Error generating content: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]",
+    "generated_text": "The evidence indicates that the top reactions associated with the adverse events are Acute kidney injury with 22 cases, Drug ineffective with 12 cases, Cerebral haemorrhage with 7 cases, and Hyponatraemia and Cholestasis each with 6 cases.",
     "evaluation": {
-      "is_grounded": false,
+      "is_grounded": true,
       "text_numbers_found": [
-        "503"
+        "22",
+        "12",
+        "7",
+        "6"
       ],
       "evidence_numbers_found": [
         "22",
-        "6",
         "12",
-        "7"
+        "7",
+        "6"
       ],
-      "unsupported_numbers": [
-        "503"
-      ]
+      "unsupported_numbers": []
     }
   }
 ]

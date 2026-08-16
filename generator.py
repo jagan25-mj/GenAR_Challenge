@@ -1,31 +1,33 @@
+import os
 import json
-from google import genai
-from google.genai import types
+from openai import OpenAI
 
 class ReportGenerator:
     def __init__(self):
-        # Assumes GEMINI_API_KEY is in the environment
-        self.client = genai.Client()
-        # You can use gemini-3.5-flash
-        self.model_name = "gemini-3.5-flash"
+        # Initialize the OpenAI client pointing to NVIDIA NIM
+        self.client = OpenAI(
+            base_url="https://integrate.api.nvidia.com/v1",
+            api_key=os.environ.get("NVIDIA_API_KEY", "NOT_SET"),
+        )
+        # Using Llama 3.1 8B Instruct hosted on NVIDIA infrastructure
+        self.model_name = "meta/llama-3.1-8b-instruct"
 
     def generate_section(self, system_prompt: str, user_instructions: str, evidence: dict) -> str:
         """
         Generates a section using the exact scoped evidence provided.
         """
-        # We format the evidence explicitly as JSON to ground the model.
         prompt = f"Instructions: {user_instructions}\n\nEvidence payload:\n{json.dumps(evidence, indent=2)}"
         
         try:
-            response = self.client.models.generate_content(
+            response = self.client.chat.completions.create(
                 model=self.model_name,
-                contents=prompt,
-                config=types.GenerateContentConfig(
-                    system_instruction=system_prompt,
-                    temperature=0.0, # Zero temperature for deterministic, factual reporting
-                )
+                messages=[
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": prompt}
+                ],
+                temperature=0.0
             )
-            return response.text.strip()
+            return response.choices[0].message.content.strip()
         except Exception as e:
             print(f"Error generating section: {e}")
             return f"[Error generating content: {e}]"
